@@ -7,8 +7,8 @@ def linearSearch(arr, target):
 
 arr = [1, 9, 8, 7, 6, 3, 11, 4, 6, 9, 7, 2, 0, 19, -10]
 target = -10
-idx = linearSearch(arr, target)
-if idx >= 0:
-    print(f"{target} is found at index {idx}")
+ans = linearSearch(arr, target)
+if ans >= 0:
+    print(f"{target} is found at index {ans}")
 else :
     print(f"{target} was not found")
