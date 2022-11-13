@@ -1,0 +1,85 @@
+
+# Python program to find smallest number in a list
+
+
+def min(list):
+    
+    min1 = list[0]
+    for i in range(len(list)):
+        if list[i] < min1:
+            min1 = list[i]
+    return min1
+
+
+list = [1, 9, 8, 7, 6, 3, 11, 4, 6, 9, 7, 2, 0, 19, -10]
+ans = min(list)
+print(f" minimum number is {ans}")
+
+
+# ======== Method 2 =============
+
+# == Asccending Order
+
+# lst = [10, 20, 4, 45, 99]
+ 
+# lst.sort()
+ 
+# print("Smallest element is:", lst[0])
+
+
+# ========= Method 3 =================
+
+# == Decending order
+
+# lst = [10, 20, 4, 45, 99]
+
+# lst.sort(reverse=True)
+
+# print("Smallest element is:", lst[-1])
+
+
+# ========= Method 4 ================
+
+#<code>
+
+# lst = [10, 20, 1, 45, 99]
+ 
+# print("Smallest element is:", min(lst))
+
+#</code>
+
+# ========== Method 5 ===============
+
+# using lambda function and min() method
+#<code>
+
+# lst = [20, 10, 20, 1, 100]
+# print(min(lst, key=lambda value: int(value)) )
+
+#</code>
+
+# ========== Method 6 =================
+
+# using enumerate function to find smallest number in a list
+
+#<code>
+
+# lst = [20, 10, 20, 1, 100]
+# a,i = min((a,i) for (i,a) in enumerate(lst))
+# print(a)
+
+#</code>
+
+# ========= Method 7 ==================
+
+# Using reduce function to find the smallest number in a list
+
+#<code>
+
+# from functools import reduce
+# lst = [20, 10, 20, 15, 100]
+# print(reduce(min,lst) )
+
+#</code>
+
+
