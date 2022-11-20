@@ -8,9 +8,14 @@
 #     n=n//10
 # print(f"The number of digits in the number are: {count}")
 
-lst = [2,4,8,5,9,35,3,6,76,45,47,30]
+lst = [2,4,8,5,9,35,3,6,76,5,45,47,5,30]
+n = 5
 
-lst2 = []
-for i in lst:
-    if i % 2 == 0:
-        print(i, end=" ")
+def occurance(lst, n):
+    count  = 0
+    for i in lst:
+        if n == i:
+            count += 1
+    return count
+
+print(f"elemrnt {n} occur {occurance(lst,n)} times")
