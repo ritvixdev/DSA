@@ -37,7 +37,7 @@ print("Factorial of",num,"is",
 factorial(num))
  
  
- def factorial(n):
+def factorial(n):
        
     res = 1
       
