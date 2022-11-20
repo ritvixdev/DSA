@@ -8,3 +8,9 @@
 #     n=n//10
 # print(f"The number of digits in the number are: {count}")
 
+lst = [2,4,8,5,9,35,3,6,76,45,47,30]
+
+lst2 = []
+for i in lst:
+    if i % 2 == 0:
+        print(i, end=" ")
