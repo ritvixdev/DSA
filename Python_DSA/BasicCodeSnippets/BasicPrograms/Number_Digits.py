@@ -10,5 +10,8 @@
 
 lst = [2,4,8,5,9,35,3,6,76,45]
 
+lst  = list(set(lst))
+
 lst.sort()
+
 print(lst[-2])
