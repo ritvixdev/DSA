@@ -8,14 +8,21 @@
 #     n=n//10
 # print(f"The number of digits in the number are: {count}")
 
-lst = [2,4,8,5,9,35,3,6,76,5,45,47,5,30]
+x = [[1,2,3],
+     [4,5,6],
+     [7,8,9]]
 
-n = int(len(lst))
-sum1  = 0
-lst2 = []
+y = [[9,8,7],
+     [6,5,4],
+     [3,2,1]]
 
-for i in range(n):
-    sum1 += lst[i]
-    lst2.append(sum1)
-    
-print(lst2)
+result = [[0,0,0],
+          [0,0,0],
+          [0,0,0]]
+
+for i in range (len(x)):
+    for j in range (len(y)):
+        result[i][j] = x[i][j] + y[i][j]
+        
+for r in result:
+    print(r)
