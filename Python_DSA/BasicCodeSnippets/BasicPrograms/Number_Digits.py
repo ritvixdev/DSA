@@ -9,13 +9,12 @@
 # print(f"The number of digits in the number are: {count}")
 
 lst = [2,4,8,5,9,35,3,6,76,5,45,47,5,30]
-n = 5
 
-def occurance(lst, n):
-    count  = 0
-    for i in lst:
-        if n == i:
-            count += 1
-    return count
+n = 2
+m = 7
 
-print(f"elemrnt {n} occur {occurance(lst,n)} times")
+for i in range(n,m+1):
+    if i % 2 != 0:
+        print(i,end=", ")
+    
+    
