@@ -10,9 +10,8 @@
 def reverse(s):
     str = ""
     for i in s:
-        b = i
         str = i + str
-        c = i
+        
     return str
   
 s = "Geeksforgeeks"
