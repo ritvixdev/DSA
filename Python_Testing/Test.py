@@ -1,0 +1,22 @@
+
+def lengthOfLongestSubstring(s):
+    seen = {}
+    l = 0
+    output = 0
+    for r in range(len(s)):
+        a = s[r]
+        if s[r] not in seen:
+            output = max(output,r-l+1)
+        
+        else:
+            b = seen[s[r]]
+            if seen[s[r]] < l:
+                output = max(output,r-l+1)
+            else:
+                c = seen[s[r]]
+                l = seen[s[r]] + 1
+        seen[s[r]] = r
+        d = seen[s[r]]
+    return output
+
+print(lengthOfLongestSubstring('abncajbuio'))
