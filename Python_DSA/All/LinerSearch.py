@@ -1,4 +1,4 @@
-# Program to inpliment Linear Search:
+# Program to impliment Linear Search:
 
 # Time Complexity of LinearSearch:      |   Space Complexity   
 #       BEST        AVERAGE     WORST   |   WORST
@@ -38,4 +38,13 @@ def search(arr, x):
         if arr[i] == x:
             return i
  
+    return -1
+
+
+# another way [chatGPT]:
+
+def linear_search(arr, x):
+    for i, val in enumerate(x):
+        if val == x:
+            return i
     return -1
