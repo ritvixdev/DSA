@@ -1,5 +1,10 @@
 # Program to inpliment Linear Search:
 
+# Time Complexity of QuickSort:         |   Space Complexity   
+#       BEST        AVERAGE     WORST   |   WORST
+#       nlog(n)     nlog(n)     (n^2)   |   log(n)    
+
+
 def search(arr, x):
  
     for i in range(len(arr)):
