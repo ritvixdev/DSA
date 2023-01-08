@@ -1,15 +1,21 @@
+def isAnagram(str1, str2):
+  if len(str1) != len(str2):
+    return False
 
+  dict = {}
 
-def checkFreq(str):
-  freq = {}
-  
-  for i in str:
-    if i in freq:
-      freq[i] += 1
+  for i in range(len(str1)):
+    if(str1 in dict):
+      dict[str1[i]] += 1
     else:
-      freq[i] = 1
+      dict[str1[i]] = 1
 
-  return freq
- 
-str = "GeeksforGeeks"
-print(checkFreq(str))
+  if(str2 not in dict):
+    return False
+  return True
+
+
+str1 = 'llisten'
+str2 = 'sillent'
+
+print(isAnagram(str1, str2))
