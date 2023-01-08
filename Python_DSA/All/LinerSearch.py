@@ -1,6 +1,6 @@
 # Program to inpliment Linear Search:
 
-# Time Complexity of QuickSort:         |   Space Complexity   
+# Time Complexity of LinearSearch:      |   Space Complexity   
 #       BEST        AVERAGE     WORST   |   WORST
 #       O(1)        O(n)        O(n)    |   O(1)    
 
