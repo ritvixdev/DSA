@@ -4,7 +4,7 @@
 #       BEST        AVERAGE     WORST   |   WORST
 #       nlog(n)     nlog(n)     (n^2)   |   log(n)    
 
-
+# GeekOfGeeks Method:
 def partition(array, low, high):
 
     pivot = array[high]
@@ -100,3 +100,30 @@ quickSort(data, 0, size - 1)
  
 print('Sorted Array in Ascending Order:')
 print(data)
+
+
+# chatGPT Method:
+
+def quick_sort(list):
+    if len(list) <= 1:
+        return list
+
+    pivot = list[0]
+    left = []
+    right = []
+
+    for i in range(1, len(list)):
+        if list[i] < pivot:
+            left.append(list[i])
+        else:
+            right.append(list[i])
+
+    return quick_sort(left) + [pivot] + quick_sort(right)
+
+data = [1, 7, 4, 1, 10, 9, -2]
+size = len(data)
+sorted_list = quick_sort(data)
+ 
+print('Sorted Array in Ascending Order:')
+print(sorted_list)
+
