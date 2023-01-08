@@ -2,7 +2,7 @@
 
 # Time Complexity of QuickSort:         |   Space Complexity   
 #       BEST        AVERAGE     WORST   |   WORST
-#       O(1)     nlog(n)     (n^2)   |   log(n)    
+#       O(1)        O(n)     (n^2)   |   log(n)    
 
 
 def search(arr, x):
